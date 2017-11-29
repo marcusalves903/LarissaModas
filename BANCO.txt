@@ -1,0 +1,26 @@
+--
+-- Database: `banco`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `produto`
+--
+
+CREATE TABLE `produto` (
+  `id_produto` int(5) NOT NULL PRIMARY KEY,
+  `descricao` varchar(200) NOT NULL,
+  `preco` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `login` varchar(10) NOT NULL PRIMARY KEY,
+  `senha` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
